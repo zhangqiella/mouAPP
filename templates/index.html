@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <p>hello kitty</p>
+{#    <img src="D:\python_scripts\fullstack\webpage\kitty.jpg" width="200" height="200">#}
+    <form action="/index/" method="post" enctype="multipart/form-data">
+            <p>姓名<input type="text" name="username"></p>
+            <p>密码<input type="password" name="password"></p>
+
+            <p>性别</p>
+            <p>male<input type="radio" name="gender" value="1"></p>
+            <p>female<input type="radio" name="gender" value="0"></p>
+
+            <p>爱好</p>
+            <p>乒乓球<input type="checkbox" name="hobby" value="101"></p>
+            <p>篮球<input type="checkbox" name="hobby" value="102"></p>
+            <p>足球<input type="checkbox" name="hobby" value="103"></p>
+
+            <p>上传文件<input type="file" name="files"></p>
+
+            <p>出生地
+            <select name="city" multiple size="2">
+                <optgroup label="河北省">
+                    <option value="langfang">廊坊</option>
+                    <option value="shijiazhuang">石家庄</option>
+                </optgroup>
+                <optgroup label="北京市">
+                    <option value="chaoyang">朝阳</option>
+                    <option value="haidian">海淀</option>
+                    <option value="xicheng">西城</option>
+                </optgroup>
+            </select>
+            </p>
+            <p><textarea rows="10" cols="10"></textarea></p>
+
+{#        这是把姓名和下面的input关联起来，点姓名，光标会自动在input框里闪。#}
+            <label for="www">姓名</label>
+            <input id="www" type="text">
+
+        <fieldset>
+            <legend>登录吧</legend>
+            <input type="text">
+            <p>mima<input type="password"></p>
+        </fieldset>
+
+
+            <p><input type="submit" value="发送"></p>
+    </form>
+</body>
+</html>
